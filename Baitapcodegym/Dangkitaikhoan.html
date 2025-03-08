@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Đăng Ký</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .form-container {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 300px;
+    }
+    h2 {
+      text-align: center;
+    }
+    label {
+      font-weight: bold;
+    }
+    input, select, textarea, button {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #28a745;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body>
+
+<div class="form-container">
+  <h2>Đăng Ký Tài Khoản</h2>
+  <form action="submit.php" method="POST">
+    <label for="name">Họ và Tên:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="password">Mật khẩu:</label>
+    <input type="password" id="password" name="password" required>
+
+    <label for="gender">Giới tính:</label>
+    <select id="gender" name="gender">
+      <option value="male">Nam</option>
+      <option value="female">Nữ</option>
+      <option value="other">Khác</option>
+    </select>
+
+    <label for="bio">Giới thiệu bản thân:</label>
+    <textarea id="bio" name="bio" rows="3"></textarea>
+
+    <label for="avatar">Ảnh đại diện:</label>
+    <input type="file" id="avatar" name="avatar">
+
+    <label>
+      <input type="checkbox" name="agree" required> Tôi đồng ý với điều khoản
+    </label>
+
+    <button type="submit">Đăng Ký</button>
+  </form>
+</div>
+
+</body>
+</html>

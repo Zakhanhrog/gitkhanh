@@ -1,51 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8">                                                                                              <! -- HTML -->
     <title> Form and Table </title>
 </head>
 <body>
-    <H1> GIA KHANH C02 </H1>
-    <p> Ngô Gia Khánh - Web developer - Trainer: KieuAnh </p>
-    <form method="POST" action="http://localhost:8080/giakhanh">
-        <input type="hidden" name="tokenc02zakhanh" id="tokenc02zakhanh">
-        <fieldset style="width:420px">
-            <legend> 1.Infomation and rank </legend>
-        <table style="width:90%">
+    <H1> GIA KHANH C02 </H1>                                                                                            <! -- Tiêu đề -->
+    <p> Ngô Gia Khánh - Web developer - Trainer: KieuAnh </p>                                                           <! -- tạo form mới -->
+    <form method="POST" action="http://demo.codegym.vn/6/registration_form/register.php"/>
+        <input type="hidden" name="tokenc02zakhanh" id="tokenc02zakhanh">                                               <! -- Thêm nội dung gửi sever không hiện trên web -->
+        <fieldset style="width:420px">                                                                                  <! -- Tạo 1 vùng độc lập -->
+            <legend> 1.Infomation and rank </legend>                                                                    <! -- tên field -->
+        <table style="width:90%">                                                                                       <! -- Tạo table -->
             <tr>
                 <th> Rank </th>
                 <th> Info </th>
                 <th> Code </th>
             </tr>
             <tr>
-                <td> 1 </td>
-                <td> <input type="text" name="info" value="khanh"> </td>
-                <td> <input type="password" name="code1" value="C02Codegym" > </td>
+                <td align="middle"> 1 </td>
+                <td> <input type="text" name="info" required> </td>
+                <td> <input type="password" name="code1" required > </td>
             </tr>
             <tr>
-                <td> 2 </td>
-                <td> <input type="text" name="info" value="hieu"> </td>
-                <td> <input type="password" name="code2" value="C02Codegym2" > </td>
+                <td align="middle"> 2 </td>
+                <td> <input type="text" name="info" required> </td>
+                <td> <input type="password" name="code2" required > </td>
             </tr>
             <tr>
-                <td> 3 </td>
-                <td> <input type="text" name="info" value="hung"> </td>
-                <th> <input type="password" name="code3" value="C02Codegym3"> </th>
+                <td align="middle"> 3 </td>
+                <td> <input type="text" name="info" required> </td>
+                <th> <input type="password" name="code3" required> </th>
             </tr>
             <tr>
-                <td rowspan="2"> 4 </td>
-                <td> <input type="text" name="info" value="hoang"> </td>
-                <td rowspan="2"> <input type="password" name="code3" value="C02Codegym4" > </td>
+                <td rowspan="2" align="middle"> 4 </td>
+                <td> <input type="text" name="info" required> </td>
+                <td rowspan="2"> <input type="password" name="code3" required > </td>
             </tr>
             <tr>
-                <td> <input type="text" name="info" value="nam"> </td>
+                <td> <input type="text" name="info" required> </td>
             </tr>
             <tr>
-                <td> Note </td>
-                <td colspan="2"> <input type="text" name="note"></td>
+                <td align="middle"> Note </td>
+                <td colspan="2" align="middle"> <input type="text" name="note"></td>
             </tr>
-        </table>
-            <input type="submit" value="Submit">
+        </table>                                                                                                        <! -- end table -->
+            <input type="submit" value="Submit" required>
         </fieldset>
         <fieldset style="width:420px">
             <legend> 2.Interests and habits </legend>
@@ -87,8 +87,8 @@
                     <th> Address </th>
                 </tr>
                 <tr>
-                    <td> Khanh </td>
-                    <td>
+                    <td align="middle"> Khanh </td>
+                    <td align="middle">
                         <select name="city">
                             <option value="Thailand">Thailand</option>
                             <option value="Mumbai">Mumbai</option>
@@ -97,8 +97,8 @@
                     </td>
                 </tr>
                 <tr>
-                    <td> Hieu </td>
-                    <td>
+                    <td align="middle"> Hieu </td>
+                    <td align="middle">
                         <select name="city">
                             <option value="Thailand">Thailand</option>
                             <option value="Mumbai">Mumbai</option>
@@ -109,6 +109,8 @@
             </table>
             <input type="submit" value="Send"/>
         </fieldset>
+    <label for="avatar">Image</label>
+    <input type="file" id="avatar" name="avatar">
     </form>
 </body>
 </html>
