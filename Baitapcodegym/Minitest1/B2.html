@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+    <head>
+        <meta charset="utf-8">
+        <title> B2minitest </title>
+    </head>
+<body>
+    <form method="POST" action=" http://demo.codegym.vn/6/registration_form/register.php"/>
+
+        <h1> ĐĂNG KÍ TÀI KHOẢN </h1>
+
+        <fieldset style="width:520px">
+            <legend> Thông tin cá nhân </legend>
+                Họ và tên: <input type="text" name="name" required><br><br>
+                Email: <input type="Email" name="email" required><br><br>
+                Số điện thoại: <input type="tel" name="phone" required><br><br>
+                Mật khẩu: <input type="password" name="password" required><br><br>
+                Giới tính:
+                <label><input name="gender" value="nam" type="radio"/> Nam </label>
+                <label><input name="gender" value="nu" type="radio"/> Nữ </label>
+        </fieldset>
+    <br>
+        <fieldset style="width:520px">
+            <legend> Thông tin bổ sung </legend>
+                Ngày sinh: <input type="date" name="birthday" required><br><br>
+                Nghề nghiệp:
+                <select name="nghenghiep">
+                    <option value="Sinhvien">Sinh viên</option>
+                    <option value="Giáo viên">Giáo viên</option>
+                    <option value="Khác">Khác</option>
+                </select>
+        </fieldset>
+    <br>
+        <input name="dangking" type="submit" value="Đăng kí">
+        <input name="xóa" type="reset" value="Xóa">
+    </form>
+
+</body>
+
+
+</html>
