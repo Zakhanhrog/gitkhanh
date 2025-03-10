@@ -11,13 +11,16 @@ b = parseFloat(b);
 
 if (a !== 0 && b !== 0) {
     if (a % b === 0) {
+        alert(a + " là bội số của " + b);
         document.write(a + " là bội số của " + b);
         document.write("<br/>");
     } else {
         if (b % a === 0) {
+            alert(b + " là bội số của " + a);
             document.write(b + " là bội số của " + a);
             document.write("<br/>");
         }else {
+            alert("Hai số không phải bội số của nhau");
             document.write("Hai số không phải bội số của nhau");
             document.write("<br/>");
         }
