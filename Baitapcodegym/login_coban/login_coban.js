@@ -18,3 +18,4 @@ function LOGIN(){
         alert("Canceled")
     }
 }
+document.w
