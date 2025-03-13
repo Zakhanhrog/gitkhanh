@@ -6,10 +6,10 @@ function init(){
     imgBall.style.left = "0px"
 
 }
-function MoveRight(){
+function MoveLeft(){
     imgBall.style.left = parseInt(imgBall.style.left) + -10 +"px"
 }
-function MoveLeft(){
+function MoveRight(){
     imgBall.style.left = parseInt(imgBall.style.left) + 10 +"px"
 }
 window.onload = init;
