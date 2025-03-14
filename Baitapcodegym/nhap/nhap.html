@@ -2,51 +2,20 @@
 <html lang="vi">
 <head>
     <meta charset="utf-8">
-    <title>Kiểm tra ngày trong tuần</title>
+    <title>nhap</title>
 </head>
 <body>
 
-<h1>Hôm nay là:</h1>
-<p id="ngayHienTai"></p>
+
+<p id="re"></p>
 
 <script>
-    let today; // Khai báo biến today để lưu trữ ngày
+    var a=0
+    do {
+       console.log(a);
+        a ++;
+    }while (a>1);
 
-    switch (new Date().getDay()) {
-        case 0:
-            today = "Chủ nhật";
-            break;
-        case 1:
-            today = "Thứ hai";
-            break;
-        case 2:
-            today = "Thứ ba";
-            break;
-        case 3:
-            today = "Thứ tư";
-            break;
-        case 4:
-            today = "Thứ năm";
-            break;
-        case 5:
-            today = "Thứ sáu";
-            break;
-        case 6:
-            today = "Thứ bảy";
-            break;
-        default:
-            today = "Không xác định"; // Trường hợp này hiếm khi xảy ra, nhưng vẫn nên có để phòng ngừa
-    }
-
-    // Gán giá trị của today vào thẻ <p> để hiển thị trên trang web
-    document.getElementById("ngayHienTai").textContent = today;
-
-    // Bạn có thể thêm các hành động khác dựa trên ngày ở đây. Ví dụ:
-    if (today === "Thứ bảy" || today === "Chủ nhật") {
-        console.log("Cuối tuần rồi!");
-    } else {
-        console.log("Ngày làm việc.");
-    }
 </script>
 
 </body>
