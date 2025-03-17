@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pro</title>
+
+<style>
+    #circle {
+        width: 70px;
+        height: 70px;
+        background-color: red;
+        border-radius: 50%;
+        box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.68);
+        position: relative;
+        animation-name: example;
+        animation-duration: 3s;
+        animation-delay: 1s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes example{
+        0%   {background-color:red; left:0px; }
+        50%  {background-color:yellow; left:170px;}
+        100% {background-color:green; left:0px; }
+
+    }
+     .back{
+         width: 200px;
+         height: 45px;
+         background-color: rgba(204, 204, 204, 0.82);
+         border-radius: 25px;
+     }
+     .tooltip{
+         position: relative;
+         display: inline-block;
+     }
+     .tiptext{
+         visibility: hidden;
+         width: 200px;
+         color: black;
+         text-align: center;
+         padding: 5px 20px 5px 20px;
+         border-radius: 4px;
+         position: absolute;
+         z-index: 10;
+         background-color: #e0e0e0;
+     }
+     .tooltip:hover .tiptext{
+         visibility: visible;
+     }
+
+
+</style>
+
+</head>
+<body>
+<div class="back">
+    <div id="circle"></div>
+</div>
+
+<div class=" tooltip"> Hover over me
+<span class=" tiptext "> Cach su dung CSS day du </span>
+</div>
+</body>
+</html>
