@@ -15,12 +15,13 @@ function CheckSNT() {
         let i = 5
         while ( i*i <= number) {
             if ( number % i == 0 || number % (i + 2) ==0 ) {
-                notify = false
                 i = i + 6
+                notify = false
             }else {
-                notify = true
+                i+=6
             }
         }
+        notify = true
     }
     if ( notify) {
         document.getElementById("result").innerHTML += number + " la so nguyen to" +"<br>"

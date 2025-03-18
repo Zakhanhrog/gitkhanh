@@ -13,12 +13,16 @@ function count100() {
 // ex2
 function temp() {
     let temp = parseFloat(prompt("Hay nhap nhiet do"))
-    if ( temp > 100 ){
-        alert("Hay giam nhiet do")
-    } else if ( temp < 20 ){
-        alert("Hay tang nhiet do")
-    } else {
-        alert("nhiet do phu hop")
+    if (isNaN(temp)) {
+        if (temp > 100) {
+            alert("Hay giam nhiet do")
+        } else if (temp < 20) {
+            alert("Hay tang nhiet do")
+        } else {
+            alert("nhiet do phu hop")
+        }
+    }else{
+        alert("Hay nhap nhiet do")
     }
 }
 
@@ -120,7 +124,7 @@ function sumfibonacci(){
 // ex8
 function playgame(){
     let from = parseFloat(prompt("Hãy nhập khoảng số bắt đầu từ: "))
-    let to = parseFloat(prompt(" Từ " + from + "đến :"))
+    let to = parseFloat(prompt(" Từ " + from + " đến :"))
 
     function random(from, to){
         from = Math.floor(from)

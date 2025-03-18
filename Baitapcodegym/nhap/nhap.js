@@ -1,10 +1,11 @@
-
-let a=5
-let k=0
-while(k<5){
-    if (a % 2 == 0){
-        document.write(k+"<br>");
-        a++;
+let count = 0
+let arraynumber = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+for (let i = 0;i < arraynumber.length ; i++){
+    if (arraynumber[i] % 2 === 0) {
+        count++
     }
-    k++;
+
+
 }
+console.log(count)
+
