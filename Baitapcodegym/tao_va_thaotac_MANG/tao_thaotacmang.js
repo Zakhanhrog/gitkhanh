@@ -16,3 +16,7 @@ function display_out(){
     document.getElementById("displayout").innerHTML = result;
 }
 
+function reverse_element(){
+    result=arraymain.reverse();
+    document.getElementById("displayout").innerHTML = result;
+}
